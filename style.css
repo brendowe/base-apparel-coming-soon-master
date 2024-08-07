@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+
+:root {
+    --cor1:hsl(0, 36%, 70%);
+    --cor2:hsl(0, 93%, 68%);
+    --cor3: hsl(0, 6%, 24%);
+    --gradiente1: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+    --gradiente2: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    color: var(--cor1);
+}
+
+header {
+    width: 100%;
+}
+
+#logo {
+    display: block;
+    margin: 30px;
+}
+
+#girl {
+    display: block;
+    width: 100%;
+}
+
+main {
+    width: 360px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h1 span {
+    color: var(--cor3);
+}
+
+p {
+    font-size: 18px;
+}
+
+input {
+    height: 40px;
+    width: 280px;
+    border-radius: 25px;
+    border: 0.5px solid var(--cor1);
+}
+
+button {
+    height: 45px;
+    width: 60px;
+    border-radius: 25px;
+    background-color: var(--cor1);
+    color: white;
+    font-size: 30px;
+    right: 50px;
+    border: 0px;
+}
