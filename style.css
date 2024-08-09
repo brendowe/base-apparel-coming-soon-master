@@ -51,20 +51,43 @@ p {
     font-size: 18px;
 }
 
+#registro {
+    display: flex;
+    justify-content: center;
+}
+
 input {
     height: 40px;
-    width: 280px;
+    width: 350px;
     border-radius: 25px;
     border: 0.5px solid var(--cor1);
+    margin: 5px;
 }
 
 button {
     height: 45px;
-    width: 60px;
+    width: 80px;
     border-radius: 25px;
     background-color: var(--cor1);
     color: white;
     font-size: 30px;
     right: 50px;
     border: 0px;
+    margin: 5px;
+    margin-left: -45px;
+}
+
+button:hover {
+    background-color: hsl(0, 50%, 80%);
+}
+
+#sd {
+    display: flex;
+    margin-top: -10px;
+    margin-left: 20px;
+    justify-content: left;
+}
+
+#sd p {
+    font-size: 12px;
 }
