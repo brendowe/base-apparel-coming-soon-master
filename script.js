@@ -1,6 +1,9 @@
 const botao = document.getElementById("btn");
 const resultado = document.createElement("span");
 const sd = document.getElementById("sd");
+const erro = document.getElementById("erro");
+const img = document.createElement('img');
+img.src = "images/icon-error.svg";
 
 botao.addEventListener("click", function () {
   const email = document.getElementById("email").value;
@@ -16,5 +19,8 @@ botao.addEventListener("click", function () {
     document.getElementById("email").style.border = "2px solid red";
     resultado.innerHTML = "<p>Please provide a valid email address</p>";
     sd.appendChild(resultado);
+    erro.appendChild(img);  
   }
 });
+
+
