@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 :root {
   --cor1: hsl(0, 36%, 70%);
@@ -6,11 +7,13 @@
   --cor3: hsl(0, 6%, 24%);
   --gradiente1: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
   --gradiente2: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+  --fonte: "Josefin Sans", sans-serif;
 }
 
 body {
   margin: 0px;
-  max-width: 450px;
+  width: 450px;
+  font-family: var(--fonte);
 }
 
 #container {
@@ -60,7 +63,7 @@ main {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 55px;
 }
 
 h1 span {
@@ -120,27 +123,59 @@ button:hover {
 
 @media (min-width: 800px) {
   body {
-    width: 100%;
-    height: 100%;
-    background-color: red;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    margin-top: 60px;
-    margin-left: 200px;
-  }
-
-  header {
-    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: cover;
   }
 
   #container {
     width: 80vw;
-    height: 85vh;
+    height: 80vh;
     flex-direction: row;
+    background-image: url(images/bg-pattern-desktop.svg);
   }
 
   #content {
-    justify-items: center;
-    width: 100vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: 150px;
+  }
+
+  header {
+    width: 400px;
+    margin-right: auto;
+    margin-left: 70px;
+  }
+
+  main {
+    margin-right: auto;
+    text-align: left;
+    width: 400px;
+    height: 80%;
+    margin-right: auto;
+    margin-left: 100px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  input {
+    width: 360px;
+  }
+
+ button {
+  margin-left: auto;
+ }
+
+  #erro {
+    margin-left: 40px;
   }
 
   #girl {
@@ -148,5 +183,11 @@ button:hover {
   }
 
   #girlDesktop {
+    display: block;
+    background-image: url(images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 100%;
   }
 }
